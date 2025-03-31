@@ -5,7 +5,7 @@ const Gun = require('gun')
 //create an express application
 const app = express()
 //get port from environment or use 8765
-const port = process.env.PORT || 8765
+const port = process.env.PORT || 3000
 app.use(compression())
 app.use(Gun.serve)
 app.use(express.static(__dirname));
